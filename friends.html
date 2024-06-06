@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>NOR FARA - Perosonal Blog Website</title>
+  <meta name="title" content="NOR FARA - Perosonal Blog Website">
+  <meta name="description" content="This is a blog html template made by codewithsadee custom by Nor Fara">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./logoputih.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logoputih.png" width="119" height="37" alt="Wren logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logoputih.png" width="119" height="37" alt="Wren logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+        <li>
+            <a href="index.html" class="navbar-link hover-1" data-nav-toggler>Home</a>
+          </li>
+
+          <li>
+            <a href="aboutme.html" class="navbar-link hover-1" data-nav-toggler>About</a>
+          </li>
+
+          <li>
+            <a href="experience.html" class="navbar-link hover-1" data-nav-toggler>Experience</a>
+          </li>
+
+          <li>
+            <a href="family.html" class="navbar-link hover-1" data-nav-toggler>MyFamily</a>
+          </li>
+           <li><a href="friends.html"class="navbar-link hover-1" data-nav-toggler>MyFriends</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navbar-link hover-1" data-nav-toggler>MyContact</a>
+          </li>
+
+          <li>
+            <a href="hobby.html" class="navbar-link hover-1" data-nav-toggler>Myhobbies+ </a>
+            <ul class="dropdown">
+                <li><a href="reading.html">reading</a></li>
+                <li><a href="playlist.html">playlist</a></li>
+
+            </ul>
+
+
+        
+  </header>
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Hello Everyone!</p>
+
+            <h1 class="headline headline-1 section-title">
+              I’m <span class="span">NOR FARA</span>
+            </h1>
+
+            <p class="hero-text">
+              I'm delighted to welcome you to my little slice of the internet. This website is my digital playground where I share about me,family,friends,experiences, and many moreeee with the world. Enjoyyy
+            </p>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email_address" placeholder="Enjoy Reading" required
+                class="input-field" autocomplete="off">
+
+              <button class="btn btn-primary">
+                <span class="span">Go!</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.png" width="327" height="490" alt="Wren Clark" class="w-100">
+
+            <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+
+            <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+          </div>
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+ <!-- 
+        -#style
+      -->
+<style>
+------photo slider
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+section .card{
+position: relative;
+width: 300px;
+height: 300px;
+margin: 30px;
+transform-style: preserve-3d;
+perspective: 1000px;
+}
+section .card .box{
+position: absolute;
+top: 0;
+left: 0;
+width: 90%;
+height: 80%;
+transform-style: preserve-3d;
+transition: 1s ease;
+}
+section .card:hover .box{
+transform: rotateY(180deg);
+}
+section .card .box .imgBx{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+section .card .box .imgBx img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+section .card .box .contentBx{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #333;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+transform-style: preserve-3d;
+}
+section .card .box .contentBx div{
+transform-style: preserve-3d;
+padding: 20px;
+background: linear-gradient(45deg, #75a6bc, #0a212f);
+transform: translateZ(100px);
+}
+section .card .box .contentBx div h2{
+color: #fff;
+font-size: 20px;
+letter-spacing: 1px;
+}
+section .card .box .contentBx div p{
+color: #fff;
+font-size: 16px;
+}
+
+
+
+</style>
+
+      <!-- 
+        - #TOPICS
+      -->
+
+<br></br>
+<h2 class="headline headline-2 section-title card-title" id="topic-label">
+          MEET MY FRIENDS!
+        </h2>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./assets/images/cover.png" style="width:100%">
+    <div class="text">Gallery</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./assets/images/s1.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./assets/images/s2.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</section>
+
+
+<br></br>
+<section>
+<center>
+<div class="container">
+<div class="card">
+<div class="box">
+<div class="imgBx">
+<img src="./assets/images/wan.jpeg">
+</div>
+<div class="contentBx">
+<div>
+<h2>AMIRUL AZWAN BIN SAHAR</h2>
+<br>
+<p>○24 November 1996○<br>○Like driving late at night.○<br>○The crazy laughter○<br>○Loves black color○<br>○Quiet with stranger but crazy with friends○</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="box">
+<div class="imgBx">
+<img src="./assets/images/nina.jpeg">
+</div>
+<div class="contentBx">
+<div>
+<h2>AININA BINTI ANUAR</h2>
+<br>
+<p>○13 Disember 1996.○<br>○Likes watching ANIME.○<br>○Dislike cockroach.○<br>○The most blurr person you ever met.○<br>○very understanding person○</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="card">
+<div class="box">
+<div class="imgBx">
+<img src="./assets/images/zurabedah.jpg">
+</div>
+<div class="contentBx">
+<div>
+<h2>ZURAINI BINTI MAT DIAH</h2>
+<br>
+<p>○2 February 1991.○<br>○Likes watching movie.○<br>○She is my manager but very humble person○<br>○Trustworthy friend who keeps secrets○</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="card">
+<div class="box">
+<div class="imgBx">
+<img src="./assets/images/sol.jpeg">
+</div>
+<div class="contentBx">
+<div>
+<h2>SITI SOLEHAH BINTI ROSLI</h2>
+<br>
+<p>○24 October 2003○<br>○love to watch anime○<br>○she's very friendly○<br>○ making life exciting and unpredictable for herself ○<br>○She loves the excitement of unplanned travel○</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="box">
+<div class="imgBx">
+<img src="./assets/images/dilla.jpeg">
+</div>
+<div class="contentBx">
+<div>
+<h2>NOR ADILLAH BINTI NASARUDIN</h2>
+<br>
+<p>○4 March 2003.○<br>○very understanding and good listener○<br>○Someone can be trusted○<br>○prioritizes meaningful relationships and cherishes moments spent with loved ones○</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="box">
+<div class="imgBx">
+<img src="./assets/images/sara.jpeg">
+</div>
+<div class="contentBx">
+<div>
+<h2>MAISARAH BINTI GHAZALI</h2>
+<br>
+<p>○23 October 2003.○<br>○Likes watching movie.○<br>○A person who can empathize with situation○<br>○Someone who stands up for who needed○<br>○Loves cooking and fooodd○</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+              </section>
+
+<div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; Developed by <a href="#" class="copyright-link">NOR FARA 2024</a>
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="" class="social-link">
+                
+
+                <span class="span">THANKS FOR VISITINGGG!!!</span>
+              </a>
+            </li>
+
+            
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+   <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>    

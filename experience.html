@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title></title>
+  <meta name="title" content="Nor Fara Website">
+  <meta name="description" content="">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logoputih.png" width="119" height="37" alt="Wren logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logoputih.png" width="119" height="37" alt="Wren logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+        <li>
+            <a href="index.html" class="navbar-link hover-1" data-nav-toggler>Home</a>
+          </li>
+
+          <li>
+            <a href="aboutme.html" class="navbar-link hover-1" data-nav-toggler>About</a>
+          </li>
+
+          <li>
+            <a href="experience.html" class="navbar-link hover-1" data-nav-toggler>Experience</a>
+          </li>
+
+          <li>
+            <a href="family.html" class="navbar-link hover-1" data-nav-toggler>MyFamily</a>
+          </li>
+           <li><a href="friends.html"class="navbar-link hover-1" data-nav-toggler>MyFriends</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navbar-link hover-1" data-nav-toggler>MyContact</a>
+          </li>
+
+          <li>
+            <a href="hobby.html" class="navbar-link hover-1" data-nav-toggler>Myhobbies+ </a>
+            <ul class="dropdown">
+                <li><a href="reading.html">reading</a></li>
+                <li><a href="playlist.html">playlist</a></li>
+
+            </ul>
+
+
+        
+  </header>
+  <main>
+    <article>
+
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Hello Everyone!</p>
+
+            <h1 class="headline headline-1 section-title">
+              I’m <span class="span">NOR FARA</span>
+            </h1>
+
+            <p class="hero-text">
+               I'm delighted to welcome you to my little slice of the internet. This website is my digital playground where I share about me,family,friends,experiences, and many moreeee with the world. Enjoyyy
+            </p>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email_address" placeholder="Enjoy Reading" required
+                class="input-field" autocomplete="off">
+
+              <button class="btn btn-primary">
+                <span class="span">Go!</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.png" width="327" height="490" alt="Fara" class="w-100">
+
+            <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+
+            <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+          </div>
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+ <!-- 
+        -#style
+      -->
+<style>
+------photo slider
+
+      font-family: 'Noto Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section-title2 {
+     font-size: 40px
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .topics-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .topic-card2 {
+      width: 30%;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .topic-card img {
+      width: 150%;
+
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+
+    .card-subtitle {
+      font-size: 18px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 16px;
+      color: #555;
+      padding: 0 15px 15px;
+    }
+ /** 
+   * TOPICS
+   */
+
+  .topic-card2 {
+  }
+
+</style>
+
+      <!-- 
+        - #TOPICS
+      -->
+
+<br></br><h2 class="headline headline-2 section-title" id="hover-boxes-label">MY EXPERIENCE AND JOURNEY</h2>
+
+ <section class="topics" id="topics" aria-label="topics">
+        <div class="container">
+          <h2 class="section-title">2019 ~ 2024</h2>
+          <div class="topics-container">
+            <div class="topic-card2">
+          <img src="./assets/images/99.jpeg" alt="Image 2">
+              <div class="card-title">Supervisor</div>
+              <div class="card-subtitle">2019 - 2021</div>
+              <div class="card-description">
+              As Supervisor at 99 Speedmart Telok Panglima Garang, Worked for 2 years. This work has taught me to communicate well when serving customers
+              </div>
+            </div>
+            <div class="topic-card2">
+              <img src="./assets/images/teacher.jpeg" alt="Image 2">
+              <div class="card-title">Teacher</div>
+              <div class="card-subtitle">2021 - February 2022</div>
+              <div class="card-description">
+              Became a teacher at kindergarten Umairah Aulad and worked for four months. I became more patient and loved children.
+              </div>
+            </div>
+            <div class="topic-card2">
+              <img src="./assets/images/student2.jpeg" alt="Image 2">
+              <div class="card-title">Student</div>
+              <div class="card-subtitle">2022 - 2024</div>
+              <div class="card-description">
+              I dreamed of continuing my studies at Universiti Teknologi MARA in 2012 when I was 12 years old, and my dream came true in 2022 as an information management student at UiTM Kedah.
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+              </section>
+
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- 
+        - #RECENT POST
+      -->
+
+      <section class="section recent-post" id="recent" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">TASK DESCRIPTION</span>
+            </h2>
+
+            <p class="section-text">
+              Throughout my journey, I have had the privilege of learning a multitude of valuable lessons and acquiring a broad range of skills. Each experience, whether big or small, has contributed to my personal and professional growth in significant ways.
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/99speedmart.jpg" width="271" height="258" loading="lazy"
+                      alt="Supervisor at 99 SpeedMart" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">99 SpeedMart</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Task Description as Supervisor </a>
+                    </h3>
+
+<ul type="circle">
+<li>• Assist customers with inquiries, ensuring a pleasant shopping experience.</li>
+<br><li>• Conduct regular stock checks and audits to minimize shrinkage and maintain accurate inventory records</li>
+<br><li>• Handle customer complaints and issues, providing resolutions in a timely and professional manner.</li>
+</ul>
+                    </p>  
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"></a>
+
+                        <a href="#" class="span hover-2"></a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span"></span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/taska.jpg" width="271" height="258" loading="lazy"
+                      alt="Task Description as Teacher" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Kindergarten Umairah Aulad</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Task Description as Teacher</a>
+                    </h3>
+
+                    
+<ul type="circle">
+<li>• Develop and implement age-appropriate lesson plans and activities that promote learning and development.</li>
+<br><li>• Create a balanced schedule that includes time for instruction, play, rest, and meals.</li>
+<br><li>• Observe and assess each child's progress, documenting milestones and any areas of concern.</li>
+</ul>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"></a>
+
+                        <a href="#" class="span hover-2"></a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span"></span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/uitm.jpg" width="271" height="258" loading="lazy"
+                      alt="Task description as a student" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">UiTM Cawangan Kedah</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Task description as a student</a>
+                    </h3>
+ <ul type="circle">
+<li>• Work effectively in team settings, contributing to group discussions and collaborative projects.</li>
+<br><li>• Attend lectures, seminars, and lab sessions as scheduled.</li>
+<br><li>• Document project requirements, design processes, and outcomes.</li>
+</ul>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"></a>
+
+                        <a href="#" class="span hover-2"></a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span"></span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+
+            </nav>
+
+          </div>
+
+          <div class="post-aside grid-list">
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Click to see the location</span>
+              </h3>
+
+              <ul class="popular-list">
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/pin.jpg" width="64" height="64" loading="lazy"
+                        alt="99 Speedmart 1770 Telok Panglima Garang 3" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="https://search.app.goo.gl/w6Nen7V" target="_blank"link hover-2">99 Speedmart 1770 Telok Panglima Garang 3</a>
+                      </h4>
+
+
+                      <div class="warpper">
+                        <p class="card-subtitle">Ground Floor, No: 107 & 109, Jalan Wira 2, Taman Perwira, 42500 Telok Panglima Garang, Selango</p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/pin.jpg" width="64" height="64" loading="lazy"
+                        alt="Kindergarten Umairah Aulad" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+  <a href="https://daycare.my/taska-umairah-aulad/" target="_blank"link hover-2">Kindergarten Umairah Aulad</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">No. 70, Jalan Kebun Nenas 5C/KS8,Bandar Putera 2,</p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/pin.jpg" width="64" height="64" loading="lazy"
+                        alt="UiTM Cawangan Kedah" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                       <a href="https://kedah.uitm.edu.my/" target="_blank"link hover-2">UiTM Cawangan Kedah</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">UiTM Cawangan Kedah. Kampus Sungai Petani. 08400 Merbok.</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+            
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+<div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; Developed by <a href="#" class="copyright-link">NOR FARA 2024</a>
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="" class="social-link">
+                
+
+                <span class="span">THANKS FOR VISITINGGG!!!</span>
+              </a>
+            </li>
+
+            
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+   <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>                  

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>NOR FARA - Personal Blog Website</title>
+  <meta name="title" content="NOR FARA - Personal Blog Website">
+  <meta name="description" content="custom by Nor Fara">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./logoputih.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+<!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logoputih.png" width="119" height="37" alt="Fara logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logoputih.png" width="119" height="37" alt="Fara logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+        <li>
+            <a href="index.html" class="navbar-link hover-1" data-nav-toggler>Home</a>
+          </li>
+
+          <li>
+            <a href="aboutme.html" class="navbar-link hover-1" data-nav-toggler>About</a>
+          </li>
+
+          <li>
+            <a href="experience.html" class="navbar-link hover-1" data-nav-toggler>Experience</a>
+          </li>
+
+          <li>
+            <a href="family.html" class="navbar-link hover-1" data-nav-toggler>MyFamily</a>
+          </li>
+           <li><a href="friends.html"class="navbar-link hover-1" data-nav-toggler>MyFriends</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navbar-link hover-1" data-nav-toggler>MyContact</a>
+          </li>
+
+          <li>
+            <a href="hobby.html" class="navbar-link hover-1" data-nav-toggler>Myhobbies+ </a>
+            <ul class="dropdown">
+                <li><a href="reading.html">reading</a></li>
+                <li><a href="playlist.html">playlist</a></li>
+
+            </ul>
+
+
+        
+  </header>
+  <main>
+    <article>
+------
+<style>
+:root {
+  /* colors */
+  --primary-color: #dfdfe2;
+  --secondary-color: #ffffff;
+  --app-background-color: #fff;
+  --background-color: #1b1b32;
+  --foreground-color: #3b3b4f;
+  --highlight-color: #9dcce2;
+
+
+
+  /* font-families */
+  --font-headline: "Roboto Mono", monospace;
+  --font-family: "Lato", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+
+
+
+.container1 {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.player,
+.playlist {
+  width: 450px;
+  background-color: var(--background-color);
+  border: 3px solid var(--foreground-color);
+}
+
+.player {
+  height: 260px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.player-bar,
+.playlist-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  width: 100%;
+  height: 30px;
+  background-color: var(--foreground-color);
+}
+
+.parallel-lines {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  padding: 0 5px;
+}
+
+.parallel-lines > div {
+  height: 2px;
+  width: 100%;
+  min-width: 75px;
+  background-color: var(--highlight-color);
+}
+
+.fcc-title,
+.playlist-title {
+  color: var(--secondary-color);
+  margin: 0 10px;
+  font-family: var(--font-headline);
+}
+
+.player-content {
+  display: flex;
+  background-color: var(--foreground-color);
+  width: 430px;
+  height: 200px;
+  column-gap: 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+#player-album-art {
+  background-color: var(--secondary-color);
+  border: 6px solid var(--background-color);
+}
+
+#player-album-art img {
+  width: 150px;
+  display: block;
+}
+
+.player-display {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 14px;
+  background-color: var(--background-color);
+  height: 153px;
+  width: 226px;
+}
+
+.player-display-song-artist {
+  height: 80px;
+}
+
+.player-buttons svg {
+  fill: var(--primary-color);
+}
+
+.playing > svg {
+  fill: var(--highlight-color);
+}
+
+.player-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: var(--root-font-size);
+  outline-color: var(--highlight-color);
+  text-align: center;
+}
+
+.playlist-song {
+  outline-color: var(--highlight-color);
+}
+
+.playlist li:not(:last-child) {
+  border-bottom: 1px solid var(--background-color);
+}
+
+button:focus,
+.playlist-song:focus {
+  outline-style: dashed;
+  outline-width: 2px;
+}
+
+/* Playlist */
+.playlist {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+#playlist-songs {
+  width: 430px;
+  height: 100%;
+  background-color: var(--foreground-color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 8px 9px;
+  visibility: visible;
+  justify-content: start;
+  list-style: none;
+}
+
+.playlist-song {
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+[aria-current="true"] {
+  background-color: var(--background-color);
+}
+
+[aria-current="true"] p {
+  color: var(--highlight-color);
+}
+
+.playlist-song-info {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 7px;
+  padding: 5px 0;
+  font-family: var(--font-family);
+}
+
+#player-song-title,
+#player-song-artist {
+  margin: 0;
+}
+
+#player-song-artist {
+  color: var(--highlight-color);
+  font-size: 0.75rem;
+}
+
+#player-song-title {
+  font-size: 1.125rem;
+}
+
+.playlist-song-title {
+  font-size: 0.85rem;
+  width: 241px;
+  text-align: left;
+}
+
+.playlist-song-artist {
+  font-size: 0.725rem;
+  width: 80px;
+}
+
+.playlist-song-duration {
+  font-size: 0.725rem;
+  margin: auto;
+  font-family: var(--font-headline);
+  width: 30px;
+}
+
+.playlist-song-delete {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.playlist-song-delete,
+.playlist-song-delete {
+  fill: var(--foreground-color);
+}
+
+.playlist-song-delete:hover circle,
+.playlist-song-delete:focus circle {
+  fill: #ff0000;
+}
+
+@media (max-width: 700px) {
+  .player,
+  .playlist {
+    width: 300px;
+  }
+
+  .player {
+    height: 340px;
+  }
+
+  #playlist-songs {
+    height: 280px;
+    padding: 5px 6px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: var(--background-color) var(--secondary-color);
+    scrollbar-width: thin;
+  }
+
+  #playlist-songs::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #playlist-songs::-webkit-scrollbar-track {
+    background: var(--background-color);
+  }
+
+  #playlist-songs::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+  }
+
+
+  .player-bar,
+  .playlist-bar,
+  .player-content,
+  #playlist-songs {
+    width: 280px;
+  }
+
+  .playlist-song {
+    justify-content: space-between;
+  }
+
+  .playlist-song-title {
+    width: 140px;
+  }
+
+  .playlist-song-artist {
+    width: 40px;
+  }
+
+  .playlist-song-duration > button {
+    padding: 0;
+  }
+
+  .player-content {
+    display: inline;
+    position: relative;
+    justify-items: center;
+    height: 100%;
+  }
+
+  #player-album-art {
+    z-index: -100;
+    height: 280px;
+    box-shadow: none;
+    background: #000;
+  }
+
+  #player-album-art img {
+    width: 100%;
+    opacity: 0.6;
+  }
+
+  .player-display-song-artist {
+    padding: 0 10px;
+  }
+
+  .player-display-song-artist > p {
+    white-space: pre-wrap;
+  }
+
+  .player-display {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    top: 0;
+    height: 280px;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+</style>
+
+----------
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Hello Everyone!</p>
+
+            <h1 class="headline headline-1 section-title">
+              I’m <span class="span">NOR FARA</span>
+            </h1>
+
+            <p class="hero-text">
+              I'm delighted to welcome you to my little slice of the internet. This website is my digital playground where I share about me,family,friends,experiences, and many moreeee with the world. Enjoyyy
+            </p>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email_address" placeholder="Enjoy Reading" required
+                class="input-field" autocomplete="off">
+
+              <button class="btn btn-primary">
+                <span class="span">Go!</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.png" width="327" height="490" alt="Fara Clark" class="w-100">
+
+            <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+
+            <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+          </div>
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOPICS
+      -->
+
+      
+<!-- 
+        - #TOPICS
+      -->
+
+<section class="topics" id="topics" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                My Top Post
+              </h2>
+
+              <p class="card-text">
+                Hello visitor, You can read my top post here
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="aboutme.html" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/aboutme.png" width="507" height="618" loading="lazy" alt="Sport"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+<p class="slider-subtitle">Aboutme</p>
+                      
+
+                      
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="experience.html" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/experience.png" width="507" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+<p class="slider-subtitle">My Experience</p>
+                      
+
+                      
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="hobby.html" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/hobbies.png" width="507" height="618" loading="lazy" alt="Design"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+<p class="slider-subtitle">My Hobbies</p>
+                      
+
+                      
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="family.html" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/meetmyfamily.png" width="507" height="618" loading="lazy" alt="Movie"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+<p class="slider-subtitle">My Family</p>
+                      
+
+                      
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="friends.html" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/myfirend.png" width="507" height="618" loading="lazy" alt="Lifestyle"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      
+
+                      <p class="slider-subtitle">My Friend</p>
+                    </div>
+
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+    <div class="container">
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logoputih.png" width="119" height="37" loading="lazy" alt="fara logo">
+            </a>
+
+            <p class="footer-text">
+              Wishing you a life filled with joy, love, and endless possibilities. May you always have the strength to follow your dreams and the wisdom to cherish every moment.
+
+            </p>
+
+            <p class="footer-list-title">warm wishes</p>
+
+            <address class="footer-text address">
+              Nor Fara<br>
+              2024
+            </address>
+
+          </div>
+
+          <div class="footer-list">
+        <p class="footer-text">
+
+              <center><img class="circular_image"<img src="./assets/images/me.png"
+            </p>
+              
+
+            
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Contact Me</p>
+
+            <p class="footer-text">
+              
+            </p>
+
+            <div class="input-wrapper">
+              <input type="text" name="name" placeholder="Nrr Faarah" required class="input-field" autocomplete="off">
+
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" placeholder="norfarasikin@gmail.com" required class="input-field"
+                autocomplete="off">
+
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+
+
+<audio id="player" autoplay controls><source src="./assets/audio/ko2.mp3" type="audio/mp3"></audio>
+
+      
+            </a>
+
+          </div>
+
+        </div>
+
+        
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
